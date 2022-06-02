@@ -3,21 +3,29 @@
   --secondary-grey: #c0c0c0;
   --button-blue: #167bf7;
   --backgroud-principal: #00030c;
+  --principal-font: "Inter";
 }
 
 body {
   background-color: var(--backgroud-principal);
   color: var(--principal-white);
+  font-family: var(--principal-font), sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .principal {
   background-image: url("img/Background.png");
   background-repeat: no-repeat;
   background-size: contain;
+  align-items: center;
+  text-align: center;
 }
 
 .container {
   height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
 .container__button {
@@ -25,4 +33,102 @@ body {
   border-radius: 5px;
   padding: 1em;
   color: var(--principal-white);
+  display: block;
+  text-decoration: none;
+  margin-bottom: 1em;
+}
+
+.secundary_button {
+  background-color: transparent;
+  border: 2px solid var(--principal-white);
+  text-decoration: none;
+}
+
+.container__warning {
+  font-size: 12px;
+  color: var(--secondary-grey);
+}
+
+.container__title {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.container__img {
+  margin: 1em 0 2em 0;
+}
+
+.container__box {
+  margin: 0 6em;
+}
+
+.secundary__img {
+  width: 80%;
+}
+
+.secundary {
+  align-items: center;
+  margin: 0 10em;
+}
+
+.desc__title {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--principal-white);
+  margin-bottom: 0.1em;
+}
+
+.desc__paragraph {
+  color: var(--secondary-grey);
+}
+
+.secundary__button {
+  display: inline-block;
+  margin-top: 1em;
+}
+
+.container__desc {
+  padding: 0.5em;
+}
+
+.devices {
+  text-align: center;
+}
+
+.devices__title {
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--principal-white);
+}
+
+.devices_list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 5em 0;
+}
+
+.list_item {
+  font-size: 32px;
+  color: var(--principal-white);
+}
+.footer{
+  align-items: center;
+}
+.footer_list {
+  display: flex;
+  justify-content: center;
+  margin: 5em 0;
+}
+
+.list__link a{
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--principal-white);
+  text-decoration: none;
+  margin: 5em 0;
+}
+
+.list__link{
+  margin: 0em 0.5em;
 }
